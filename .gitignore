@@ -1,0 +1,19 @@
+# Node
+node_modules/
+build/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Dataset de imagenes (se descarga de Kaggle)
+servidor-flask/images_ia/
+
+# Entorno y sistema
+.env
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,10 @@
+flask
+flask-cors
+tensorflow
+numpy
+pandas
+matplotlib
+pillow
+
+# Instalación:
+# pip install -r requirements_moda.txt
