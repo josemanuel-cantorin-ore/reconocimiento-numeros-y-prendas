@@ -1,0 +1,244 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1D1E22;
+  padding: 2rem;
+}
+
+.main-title {
+  font-size: 32px;
+  color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2rem;
+}
+
+/* Distribución principal: Paneles a la izquierda, botones fijos a la derecha */
+.main-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1650px;
+}
+
+/* Contenedor que agrupa los 3 paneles */
+.panels-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Configuración interna de cada panel individual */
+.digit-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #222428;
+  border: 2px solid #353840;
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+  min-width: 310px;
+  max-width: 360px;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.grid-top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1D1E22;
+  border: 1px solid #353840;
+}
+
+.grid-title {
+  font-size: 22px;
+  color: #f7f7f7;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.grid-row {
+  display: flex;
+}
+
+/* Barra lateral derecha para los controles globales */
+.global-sidebar-controls {
+  display: flex;
+  flex-direction: column;
+  background-color: #222428;
+  border: 2px solid #353840;
+  border-radius: 0.4rem;
+  padding: 2rem 1.5rem;
+  min-width: 200px;
+  position: sticky;
+  top: 2rem;
+  gap: 1.2rem;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  color: #f7f7f7;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #353840;
+  padding-bottom: 0.5rem;
+}
+
+.send-button-global {
+  background: #18EF62;
+  color: #1D1E22;
+  border: 1px solid #18EF62;
+  text-align: center;
+  padding: 1.2rem 1rem;
+  border-radius: 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.send-button-global:hover {
+  background: transparent;
+  color: #18EF62;
+}
+
+.clear-button-global {
+  background: #EF1818;
+  color: #F7F7F7;
+  border: 1px solid #EF1818;
+  text-align: center;
+  padding: 1.2rem 1rem;
+  border-radius: 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clear-button-global:hover {
+  background: transparent;
+  color: #EF1818;
+}
+
+.result-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.2rem;
+  border-top: 2px dashed #353840;
+  padding-top: 0.8rem;
+}
+
+.result-title {
+  font-size: 16px;
+  color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.server-response {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #18EF62;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 0.2rem;
+  background-color: #1D1E22;
+  border: 2px solid #353840;
+  width: 100%;
+  height: 90px;
+}
+
+.node-inactive {
+  width: 10px;
+  aspect-ratio: 1/1;
+  border: 1px solid #2d3037;
+}
+
+.node-active {
+  width: 10px;
+  aspect-ratio: 1/1;
+  background-color: #F7F7F7;
+  border: 1px solid #2d3037;
+}
+
+@keyframes LoaderAnimation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.loader-container-small {
+  display: inline-block;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 0.3rem solid #f7f7f7;
+  border-top-color: transparent;
+  animation: LoaderAnimation 1s ease-in-out infinite;
+  margin: 0;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1D1E22;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  background: #222428;
+  color: #f7f7f7;
+  border: 1px solid #353840;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-button.active {
+  background: #18EF62;
+  color: #1D1E22;
+  border-color: #18EF62;
+}
+
+.tab-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
