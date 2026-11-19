@@ -9,3 +9,6 @@ TensorFlow · Flask · React · MobileNetV2 · Python
 Las imágenes de entrenamiento no se incluyen en el repositorio por su tamaño. Se usa el dataset de Kaggle "Fashion Product Images (Small)" y se colocan en `servidor-flask/images_ia/`.
 
 Desarrollado en SENATI, Ingeniería de Software con IA.
+
+## Nota sobre el modelo Random Forest
+El archivo `random_forest_model.pkl` (~199 MB) supera el límite de GitHub y no se incluye. Se genera ejecutando `modelo.py` en `servidor-flask/`.

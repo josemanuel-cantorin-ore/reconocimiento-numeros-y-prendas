@@ -17,3 +17,4 @@ servidor-flask/images_ia/
 .DS_Store
 Thumbs.db
 .vscode/
+servidor-flask/random_forest_model.pkl
